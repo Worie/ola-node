@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  Hello world! 
+
+  FORMULARZ GET
+  <form method="GET" action="/login">
+    <input type="text" name="name" placeholder="login">
+    <input type="password" name="password" placeholder="hasło">
+    <button  type="submit">wyślij</button>
+  </form>
+  
+  FORMULARZ POST
+  <form method="POST" action="/login?supercos=true">
+    <input type="text" name="name" placeholder="login">
+    <input type="password" name="password" placeholder="hasło">
+    <button  type="submit">wyślij</button>
+  </form>
+
+  PRZYCISK DO POSTOWANIA Z JSA
+  <button class="send-button" type="submit">odwiedź przez post</button>
+  
+  <!-- kodzik do obslugi butona z fetchem postujacym z JS-->
+  <script src="script.js"></script>
+</body>
+</html>
